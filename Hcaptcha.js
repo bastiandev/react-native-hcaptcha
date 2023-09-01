@@ -181,7 +181,7 @@ const Hcaptcha = ({
           };
         </script>
       </head>
-      <body style="background-color: ${backgroundColor};">
+      <body style="margin: 0; background-color: ${backgroundColor};">
         <div id="submit"></div>
       </body>
       </html>`,
