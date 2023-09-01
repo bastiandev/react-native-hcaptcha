@@ -31,12 +31,6 @@
     "url": "https://github.com/hCaptcha/react-native-hcaptcha/issues"
   },
   "homepage": "https://github.com/hCaptcha/react-native-hcaptcha#readme",
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "react-native-modal": ">=11.5.4",
-    "react-native-webview": ">=9.0.1"
-  },
   "contributors": [
     {
       "name": "hCaptcha Team",
@@ -45,6 +39,11 @@
     }
   ],
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/runtime": "^7.15.4",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.2.2",
+    "babel-preset-react-native": "^4.0.1",
     "jest": "^27.2.2",
     "react": "*",
     "react-native": "*",
@@ -52,11 +51,15 @@
     "react-native-webview": "*",
     "react-test-renderer": "18.1.0"
   },
-  "dependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/runtime": "^7.15.4",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.2.2",
-    "babel-preset-react-native": "^4.0.1"
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-modal": ">=11.5.4",
+    "react-native-webview": ">=9.0.1"
+  },
+  "peerDependenciesMeta": {
+    "react-native-modal": {
+      "optional": true
+    }
   }
 }
