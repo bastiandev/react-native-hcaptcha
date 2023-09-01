@@ -183,7 +183,7 @@ const Hcaptcha = ({
           };
         </script>
       </head>
-      <body style="margin: 0; background-color: ${backgroundColor}; text-align: ${textAlign || 'left'};">
+      <body style="margin: 0; background-color: ${backgroundColor}; text-align: ${textAlign || 'left'}; overflow-y: hidden;">
         <div id="submit"></div>
       </body>
       </html>`,
@@ -202,6 +202,9 @@ const Hcaptcha = ({
 
   return (
     <WebView
+      overScrollMode="never"
+      showsVerticalScrollIndicator={false}
+
       originWhitelist={['*']}
       onShouldStartLoadWithRequest={(event) => {
         if (event.url.slice(0, 24) === 'https://www.hcaptcha.com') {
